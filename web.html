@@ -5,33 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mi web</title>
     <link rel="stylesheet" href="web.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
 </head>
 <body>
+    
     <div class="padre">
+
         <header>
+
             <div class="logo-search">
-                <img src="imagenes/logo-fh-lg.png" alt="" class="logo4k">
-                <input type="search" class="search" placeholder="Buscar">
-            </div>
-            <div class="rgb"></div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="#">Arma tu PC</a></li>
-                        <li><a href="#">PC armada</a></li>
-                        <li><a href="#">Monitores</a></li>
-                        <li><a href="#">Notebooks</a></li>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Mas...</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>  
-            <div class="imagenes">
+
+                <img class="logo4k" src="imagenes/logo-fh-lg.png" alt="">
+
+                <input class="search" type="search" placeholder="Buscar">
 
             </div>
+
+            <div class="rgb"></div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Arma tu PC</a></li>
+                    <li><a href="#">PC armada</a></li>
+                    <li><a href="#">Monitores</a></li>
+                    <li><a href="#">Notebooks</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Mas...</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>  
+
+            <div class="imagenes js-slider">
+
+                <img src="imagenes/10memoria.png" alt="">
+                <img src="imagenes/11memorias2.png" alt="">
+                <img src="imagenes/12.png" alt="">
+                <img src="imagenes/13.png" alt="">
+                <img src="imagenes/14.png" alt="">
+                <img src="imagenes/15.png" alt="">
+                <img src="imagenes/16.png" alt="">
+
+            </div>
+
         </main>
+
     </div>
+
 </body>
 </html>
+
+<script>
+
+    $('.js-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        // arrows: true
+    });
+
+</script>
